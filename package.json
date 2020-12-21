@@ -1,0 +1,32 @@
+{
+  "name": "weather",
+  "version": "0.1.0",
+  "description": "Weather app in ReactJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ecandotti/weather.git"
+  },
+  "author": "Enzo Candotti <enzo.candotti16@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ecandotti/weather/issues"
+  },
+  "homepage": "https://github.com/ecandotti/weather#readme",
+  "devDependencies": {
+    "@snowpack/plugin-build-script": "^2.0.12",
+    "@snowpack/plugin-react-refresh": "^2.3.9",
+    "postcss-cli": "^8.3.1",
+    "snowpack": "^2.18.5",
+    "tailwindcss": "^2.0.2"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
