@@ -15,22 +15,8 @@ const Home = () => {
     const [units, setUnits] = useState('metric')
     const [city, setCity] = useState('')
 
-   const currentDate = () => {
-        const today = new Date(Date.now())
-        const options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' }
-        const date = today.toLocaleDateString('fr-FR', options)
-        return date
-   }
-
-   const isEnter = (e) => {
-        if (e.charCode === 13) {
-            console.log('search by EnterKey')
-            fetchCity()
-        }
-   }
-
     const fetchCity = async () => {
-        const { API_KEY } = process.env
+        const API_KEY = 'your-api-key'
         const API_URL = `http://api.openweathermap.org/data/2.5/weather?q=${city}&lang=${lang}&units=${units}&appid=${API_KEY}`
         
         if (city) {
@@ -50,6 +36,21 @@ const Home = () => {
             setDataCity(null)
         }
     }
+
+    const currentDate = () => {
+        const today = new Date(Date.now())
+        const options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' }
+        const date = today.toLocaleDateString('fr-FR', options)
+
+        return date
+    }
+
+    const isEnter = (e) => {
+        if (e.key === 'Enter') {
+            console.log('search by EnterKey')
+            fetchCity()
+        }
+   }
     
     return(
         <div className="flex flex-col flex-nowrap p-6 select-none h-full">

@@ -20,7 +20,6 @@
   "homepage": "https://github.com/ecandotti/weather#readme",
   "devDependencies": {
     "@snowpack/plugin-build-script": "^2.0.12",
-    "@snowpack/plugin-dotenv": "^2.0.5",
     "@snowpack/plugin-react-refresh": "^2.3.9",
     "autoprefixer": "^10.1.0",
     "postcss": "^8.2.1",
