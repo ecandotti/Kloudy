@@ -52,22 +52,22 @@ const Home = () => {
     }
     
     return(
-        <div className="h-full w-full p-6 select-none">
+        <div className="flex flex-col flex-nowrap p-6 select-none h-full">
             { /* HEADER */}
-            <div className="text-center m-4">
+            <div className="flex-1 text-center m-4">
                 <div className="flex flex-col text-gray-100 flex-wrap items-center justify-center text-2xl">
                     <TiWeatherPartlySunny />
                     Kloudy
                 </div>
             </div>
             { /* SEARCH BAR */}
-            <div className="my-4 flex flex-row flex-nowrap text-center text-gray-200">
+            <div className="flex-1 my-4 flex flex-row flex-nowrap text-center text-gray-200">
                 <input type="text" placeholder="Entrer une ville" className="bg-gray-800 hover:bg-gray-700 rounded-xl w-full text-center focus:outline-none p-2 shadow-lg" value={city} onChange ={(e) => setCity(e.target.value)} onKeyPress={isEnter} required/>
                 <button className="bg-gray-800 hover:bg-gray-700 rounded-xl ml-2 px-2 shadow-lg focus:outline-none" onClick={() => fetchCity()}><BiSearchAlt /> </button>
             </div>
             { /* PANEL */}
-            <div className="my-6">
-                <div className="flex flex-col flex-nowrap bg-gray-800 rounded-xl p-8 shadow-lg text-white">
+            <div className="flex-10">
+                <div className="flex flex-col flex-nowrap bg-gray-800 space-y-6 rounded-xl px-8 py-14 shadow-lg text-white h-full">
                     {
                     dataCity 
                         ?

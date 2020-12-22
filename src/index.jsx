@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import App from './layouts/Default.jsx'
+import Default from './layouts/Default.jsx'
 
 ReactDOM.render(
     <React.StrictMode>
-        <App />
+        <Default />
     </React.StrictMode>,
     document.getElementById('root')
 )
