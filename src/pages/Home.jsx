@@ -64,7 +64,7 @@ const Home = () => {
             { /* SEARCH BAR */}
             <div className="flex-1 my-4 flex flex-row flex-nowrap text-center text-gray-200">
                 <input type="text" placeholder="Entrer une ville" className="bg-gray-800 hover:bg-gray-700 rounded-xl w-full text-center focus:outline-none p-2 shadow-lg" value={city} onChange ={(e) => setCity(e.target.value)} onKeyPress={isEnter} required/>
-                <button className="bg-gray-800 hover:bg-gray-700 rounded-xl ml-2 px-2 shadow-lg focus:outline-none" onClick={() => fetchCity()}><BiSearchAlt /> </button>
+                <button className="bg-gray-800 hover:bg-gray-700 rounded-xl ml-2 px-6 shadow-lg focus:outline-none" onClick={() => fetchCity()}><BiSearchAlt /> </button>
             </div>
             { /* PANEL */}
             <div className="flex-10">
