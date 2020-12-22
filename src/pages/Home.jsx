@@ -28,12 +28,11 @@ const Home = () => {
         if (e.charCode === 13) {
             console.log('search by EnterKey')
             fetchCity()
-        } else {
-            console.log('tes mort')
         }
    }
 
     const fetchCity = async () => {
+        const { API_KEY } = process.env
         const API_URL = `http://api.openweathermap.org/data/2.5/weather?q=${city}&lang=${lang}&units=${units}&appid=${API_KEY}`
         
         if (city) {
