@@ -13,8 +13,6 @@ const Home = () => {
     const [time, setTime] = useState('')
     const [lang, setLang] = useState('fr')
     const [units, setUnits] = useState('metric')
-
-    const API_KEY = '58f54bb688204f6c03bf295ad7bd994a'
     const [city, setCity] = useState('')
 
    const currentDate = () => {
