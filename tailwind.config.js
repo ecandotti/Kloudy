@@ -1,3 +1,7 @@
+const generator = require('./generator')
+
+const flex = generator({}, { noUnit: true })
+
 module.exports = {
   purge: [
      './src/**/*.html',
@@ -5,7 +9,9 @@ module.exports = {
    ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      flex
+    },
   },
   variants: {
     extend: {},
